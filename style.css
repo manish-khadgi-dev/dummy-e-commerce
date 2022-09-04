@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    font-size: 1.3rem;
+}
+
+body{
+    margin: 0;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-areas: 
+    "header header header" 
+    "h1 h1 h1 "
+    "banner banner bb1"
+    "banner banner bb2"
+    "sideMenu main main"
+    "tags main main"
+    "recent main main"
+    "footer footer footer";
+}
+    
+
+                        
+
+.wrapper > *{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.header{
+    background: gold;
+    grid-area: header;
+}
+
+h1{
+    background: green;
+    grid-area: h1;
+}
+
+.banner{
+    background: blue;
+    grid-area: banner;
+}
+
+.bb1{
+    background: orange;
+    grid-area: bb1;
+}
+
+
+.bb2{
+    background: silver;
+    grid-area: bb2;
+}
+
+.side-menu{
+    background: red;
+    grid-area: sideMenu;
+}
+
+.tags{
+    background: pink;
+    grid-area: tags;
+}
+
+.recent{
+    background: radial-gradient(blue,yellow);
+    grid-area: recent;
+}
+
+.main{
+    min-height: 50vh;
+    grid-area: main;
+    background: linear-gradient(to left, red,green,blue);
+    display: grid;
+    grid-template-areas: "div div div";
+    
+}
+
+
+
+footer{
+    background: #000;
+    color: white;
+    grid-area: footer;
+}
